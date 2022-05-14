@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ustyle.css" type="text/css">
+</head>
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="logo">
+           <a href="index.html"> <img class="img" src="https://cdn.careers.tufts.edu/wp-content/uploads/sites/100/2021/09/udemy.png" alt=""></a>
+        </div>
+        <h4><a class="text" href="">Catagories</a></h4>
+        <div class="search">
+            <div class="sicon">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </div>
+            <input class="searchtxt" type="text" placeholder="        Search for everything"  >
+        
+        </div>
+        <h4><a class="headh4" href="">Udemy Business</a></h4>
+        <h4><a class="headerh4" href="">Teach On Udemy</a></h4>
+        <img  class="cartimg" src="data:image/png;base64,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" alt="">
+        <button class="loginb" type="button">Log In</button>
+        <button class="signupb" type="button">Sign Up</button>
+        <button class="langb" type="button"><img class="langimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nKdBge9kwj4fOWYA2nJrcTr-QM7wZnZ_JQ&usqp=CAU" alt=""></button>
+
+    </div>
+    <div class="photo">
+        <div class="text1">
+            <h1 class="phteh1">Learning that gets you</h1>
+            <h3 class="phteh3">Skills for your present (and your future). Get <br> started with us.</h3>
+        </div>
+        <button class="phb1" type="button"><</button>
+        <button class="phb2" type="button">></button>
+
+    </div>
+    <div class="txtunderphoto">
+        <h1 class="txtunderphotoh1">A broad selection of courses</h1>
+        <h3 class="txtunderphotoh3">Choose from 185,000 online video courses with new additions published every month</h3>
+    </div>
+    <div class="courses">
+       <div class="courseList">
+           <h4 class="Chead"> <a class="CheadLink" href="">Python</a> </h4>
+           <h4 class="Chead"> <a class="CheadLink" href="">Exel</a> </h4>
+           <h4 class="Chead"> <a class="CheadLink" href="">Web Devolepment</a> </h4>
+           <h4 class="Chead"> <a class="CheadLink" href="">Java script</a> </h4>
+           <h4 class="Chead"> <a class="CheadLink" href="">Data Science</a> </h4>
+           <h4 class="Chead"> <a class="CheadLink" href="">AWS Certification</a> </h4>
+           <h4 class="Chead"> <a class="CheadLink" href="">Drawing</a> </h4>
+       </div> 
+       <div class="courseDetail">
+            <h1 class="Cdetailh1">Expand your career opportunities with Python</h1>
+            <h6 class="Cdetailsh6">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its <br> simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll <br> learn how to build everything from games to sites to apps.Choose from a range of courses that will appeal to</h6>
+            <button class="Cdetailsb" type="button">Explore Python</button>
+           <div class="courseCards">
+               <div class="c1">
+                   <div class="c12">  
+                   </div>
+                   <h3 class="c1h3">Learn Python:The Complete <br>Python Programming Course</h3>
+                   <p class="c1p">Avinash Jain,The codex</p>
+                   <div class="rating">
+                       <h3 class="r">4.3 ★ ★ ★ ★</h3>
+                       <p class="ratingp">(2,140)</p> 
+                    </div>
+                       <h3 class="rupeesh1">₹ 3,499</h3>  
+                  
+               </div>
+
+               <div class="c2">
+                   <div class="c21">  
+                   </div>
+                   <h3 class="c1h3">Learning Python for Data <br>Analysis and Visualization</h3>
+                   <p class="c1p">jose portilla</p>
+                   <div class="rating">
+                       <h3 class="r">4.3 ★ ★ ★ ★</h3>
+                       <p class="ratingp">(17,576)</p> 
+                    </div>
+                       <h3 class="rupeesh1">₹ 3,499</h3> 
+                       <h4 class="c2h4">Bestseller</h4> 
+                  
+               </div>  
+               <div class="c3">
+                <div class="c31">  
+                </div>
+                <h3 class="c1h3">Python for Beginners - Learn<br>Programming from scratch</h3>
+                <p class="c1p">Edwin Diaz Coding Faculty Solutions</p>
+                <div class="rating">
+                    <h3 class="r">4.4 ★ ★ ★ ★</h3>
+                    <p class="ratingp">(1,326)</p> 
+                 </div>
+                    <h3 class="rupeesh1">₹ 3,499</h3>  
+               
+            </div>
+            <div class="c4">
+                <div class="c41">  
+                </div>
+                <h3 class="c1h3">Python Beyond the Basics<br>-Object-Oriented Programming</h3>
+                <p class="c1p">Infinite Skills</p>
+                <div class="rating">
+                    <h3 class="r">4.4 ★ ★ ★ ★</h3>
+                    <p class="ratingp">(2,878)</p> 
+                 </div>
+                    <h3 class="rupeesh1">₹ 3,499</h3>  
+               
+            </div>
+            <div class="c5">
+                <div class="c51">  
+                </div>
+                <h3 class="c1h3">Python From Scratch & <br> Selenium WebDriver QA...</h3>
+                <p class="c1p">Admas Kinfu</p>
+                <div class="rating">
+                    <h3 class="r">4.5 ★ ★ ★ ★</h3>
+                    <p class="ratingp">(1,535)</p> 
+                 </div>
+                    <h3 class="rupeesh1">₹ 3,499</h3> 
+                    <h4 class="c2h4">Bestseller</h4> 
+               
+               
+            </div>
+
+            <button class="course2b1" type="button"><</button>
+ <button class="course2b2" type="button">></button>
+
+                </div>
+            </div>
+<!-- band after the first course list -->
+<div class="band">
+    <img class="insidebandimg" src="data:image/jpeg;base64,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" alt="">
+    <h3 class="insidebandh3">Learn in-demand skills with over<br>185,000 video courses</h3>
+    <img class="insidebandimg1" src="https://toppng.com/uploads/preview/transparent-background-star-115497268824j1ftohfyn.png" alt="">
+    <h3 class="insidebandh31">Choose courses taught by real-world<br>experts</h3>
+    <img class="insidebandimg2" src="https://w7.pngwing.com/pngs/933/212/png-transparent-infinity-symbol-computer-icons-symbol-miscellaneous-text-trademark.png" alt="">
+    <h3 class="insidebandh32">Learn at your own pace, with lifetime<br>access on mobile and desktop</h3>
+</div> 
+<h2 class="afterbandh2">Students are viewing</h2>
+<!-- second layer courselist -->
+<div class="secCourseList">
+    <div class="c2">
+        <div class="c212">  
+        </div>
+        <h3 class="c1h3">
+            The Complete 2022 Web<br> Development Bootcamp</h3>
+        <p class="c1p">Dr.Angela Yu</p>
+        <div class="rating">
+            <h3 class="r">4.7 ★ ★ ★ ★</h3>
+            <p class="ratingp">(1,89,778)</p> 
+         </div>
+            <h3 class="rupeesh1">₹ 455</h3>
+            <h3 class="uline">₹ 3499</h3> 
+            <h4 class="c2h4">Bestseller</h4> 
+       
+    </div> 
+
+    <div class="c2">
+        <div class="c222">  
+        </div>
+        <h3 class="c1h3">100 Days of Code: The Complete<br>Python Pro Bootcamp for 2022</h3>
+        <p class="c1p">Dr.Angela Yu</p>
+        <div class="rating">
+            <h3 class="r">4.7 ★ ★ ★ ★</h3>
+            <p class="ratingp">(1,04,909)</p> 
+         </div>
+            <h3 class="rupeesh1">₹ 455</h3> 
+            <h3 class="uline">₹ 3499</h3> 
+            <h4 class="c2h4">Bestseller</h4> 
+       
+    </div>  
+    <div class="c2">
+        <div class="c232">  
+        </div>
+        <h3 class="c1h3">2022 Complete Python<br>Bootcamp From Zero to Hero i..</h3>
+        <p class="c1p">jose portilla</p>
+        <div class="rating">
+            <h3 class="r">4.6 ★ ★ ★ ★</h3>
+            <p class="ratingp">(4,16,426)</p> 
+         </div>
+            <h3 class="rupeesh1">₹ 455</h3>
+            <h3 class="uline">₹ 3499</h3> 
+            <h4 class="c2h4">Bestseller</h4> 
+       
+    </div> 
+    <div class="c2">
+        <div class="c242">  
+        </div>
+        <h3 class="c1h3">React - The Complete Guide (incl<br>Hooks, React Router, Redux)</h3>
+        <p class="c1p">Academind by Maximilian Schwarzmüller,M..</p>
+        <div class="rating">
+            <h3 class="r">4.6 ★ ★ ★ ★</h3>
+            <p class="ratingp">(1,47,227)</p> 
+         </div>
+            <h3 class="rupeesh1">₹ 455</h3>
+            <h3 class="uline">₹ 3499</h3> 
+            <h4 class="c2h4">Bestseller</h4> 
+       
+    </div> 
+ <div class="c5">
+     <div class="c252">  
+     </div>
+     <h3 class="c1h3">The Complete JavaScript Course<br>2022: From Zero to Expert!</h3>
+     <p class="c1p">Jonas Schmedtmann</p>
+     <div class="rating">
+         <h3 class="r">4.7 ★ ★ ★ ★</h3>
+         <p class="ratingp">(6,15,776)</p> 
+      </div>
+         <h3 class="rupeesh1">₹ 455</h3> 
+         <h3 class="uline">₹ 3499</h3>
+         <h4 class="c2h4">Bestseller</h4> 
+    
+    
+ </div>
+ <button class="course2b1" type="button"><</button>
+ <button class="course2b2" type="button">></button>
+
+
+</div>
+           </div>
+           <div class="topcatagories">
+            <h3 class="aftercourseh3">Top Catagories</h3>
+            <div class="catagories">
+                <div class="firstRow">
+              <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" alt="">  
+              <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="">
+              <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg" alt="">  
+              <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" alt="">
+            </div>
+              <div class="names1">
+                  <h3 class="namesh3">Design</h3>
+                  <h3 class="namesh3">Devolepment</h3>
+                  <h3 class="namesh3">Marketing</h3>
+                  <h3 class="namesh3">IT</h3>
+              </div>
+              <di class="secondRow">
+                <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg" alt="">  
+                <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg" alt="">
+                <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg" alt="">  
+                <img class="imgcatagories" src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg" alt="">
+              </div>
+              <div class="names2">
+                <h3 class="namesh3">Personal Devolepment</h3>
+                <h3 class="namesh3">Business</h3>
+                <h3 class="namesh3">Photography</h3>
+                <h3 class="namesh3">Music</h3>
+            </div>
+              
+            </div>
+<div class="featured">
+    <h3 class="tp">Fetured topics by catagory</h3>
+    <div class="list">
+        <div class="listheading">
+            <h3 class="listhead">Devolepment</h3> 
+            <h3 class="listhead">Business</h3>
+            <h3 class="listhead">IT and SoftWare</h3> 
+            <h3 class="listhead">Design</h3>
+        </div>
+        <div class="link">
+            <h3 class="listhead"> <a class="siz" href="">Python</a> </h3> 
+            <h3 class="listhead"> <a class="siz" href="">Financial analysis</a> </h3>
+            <h3 class="listhead"> <a class="siz" href="">AWS Certification</a> </h3> 
+            <h3 class="listhead"> <a class="siz" href="">Photoshop</a> </h3>
+        </div>
+        <div class="enrolnum">
+           <div class="listhead"><h6  class="rollnum">34,822,070 students</h6></div> 
+            <div class="listhead"><h6 class="rollnum" >1,171,209 students</h6></div>
+            <div class="listhead"><h6 class="rollnum">5,549,583 students</h6></div> 
+            <div class="listhead"><h6 class="rollnum" >10,615,047 students</h6></div>
+        </div>
+        <div class="link">
+            <h3 class="listhead"> <a class="siz" href="">Web Devolepment</a> </h3> 
+            <h3 class="listhead"> <a class="siz" href="">SQL</a> </h3>
+            <h3 class="listhead"> <a class="siz" href="">Ethical Hacking</a> </h3> 
+            <h3 class="listhead"> <a class="siz" href="">Graphical Design</a> </h3>
+        </div>
+        <div class="enrolnum">
+            <div class="listhead"><h6  class="rollnum">10,921,549 students</h6></div> 
+             <div class="listhead"><h6 class="rollnum" >5,574,283 students</h6></div>
+             <div class="listhead"><h6 class="rollnum">10,489,709 students</h6></div> 
+             <div class="listhead"><h6 class="rollnum" >3,256,437 students</h6></div>
+         </div>
+         <div class="link">
+            <h3 class="listhead"> <a class="siz" href="">Mechine Learning</a> </h3> 
+            <h3 class="listhead"> <a class="siz" href="">PMP</a> </h3>
+            <h3 class="listhead"> <a class="siz" href="">Cyber Security</a> </h3> 
+            <h3 class="listhead"> <a class="siz" href="">Drawing</a> </h3>
+        </div>
+        <div class="enrolnum">
+            <div class="listhead"><h6  class="rollnum">6,864,949 students</h6></div> 
+             <div class="listhead"><h6 class="rollnum" >1,646,497 students</h6></div>
+             <div class="listhead"><h6 class="rollnum">3,828,916 students</h6></div> 
+             <div class="listhead"><h6 class="rollnum" >2,396,069 students</h6></div>
+         </div>
+         <button id="explorebutton" type="button">Explore more topics</button>
+    </div>
+
+</div>
+<div class="afterfeatured">
+    <div id="img"></div>
+    <div id="textafterimg">
+        <h1 id="txtinstructor">Become an instructor</h1>
+        <p id="discription">Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+        <button type="button" id="txtb">Start teaching today</button>
+    </div>
+    
+</div>
+<div class="band2">
+    <div id="band2inside">
+        <h2 id="band2h2">Trusted by companies of all sizes</h2>
+        <div id="companylogos">
+            <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-dark.svg" alt="">
+            <img  src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="">
+            <img  src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/v4/netapp-dark.svg" alt="">
+            <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
+        </div>
+    </div>
+    
+</div>  
+<div class="udemybusines">
+    <div id="UdemyBusinesLeft">
+        <img id="udemyLogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" alt="">
+<p id="para">Get unlimited access to 15,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</p>
+<button id="udemyBusinesB1">Get Udemy Business</button>
+    </div>
+    <img id="rightImg" src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg" alt="">
+</div>  
+<div class="afterUdemyBusines">
+    <div id="leftImg">
+      <img src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg" alt="">  
+    
+</div>
+<div id="right">
+    <h1 id="righth1">Transform your life through education</h1>
+    <p id="para2">Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
+    <button id="udemyBusinesB2" type="button">Find out how</button>
+</div>
+</div>
+<div id="footer">
+    <div id="footerlist">
+        <div class="footlist">
+            <ul class="ulist">
+                <li class="l"><a class="a" href="">Udemy Business</a></li>
+                <li class="l"><a class="a" href="">Teach on Udemy</a></li>
+                <li class="l"><a class="a" href="">Get the app</a></li>
+                <li class="l"><a class="a" href="">About us</a></li>
+                <li class="l"><a class="a" href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footlist">
+            <ul class="ulist">
+                <li class="l"><a class="a" href="">Careers</a></li>
+                <li class="l"><a class="a" href="">Blog</a></li>
+                <li class="l"><a class="a" href="">Help And Support</a></li>
+                <li class="l"><a class="a" href="">Affiliate</a></li>
+                <li class="l"><a class="a" href="">Investers</a></li>
+            </ul>
+        </div>
+        <div class="footlist">
+            <ul class="ulist">
+                <li class="l"><a class="a" href="">Terms</a></li>
+                <li class="l"><a class="a" href="">Privacy Policy</a></li>
+                <li class="l"><a class="a" href="">Cookie settings</a></li>
+                <li class="l"><a class="a" href="">Site Map</a></li>
+                <li class="l"><a class="a" href="">Accessibility Statement</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <img id="footerlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+    <button class="footerb" type="button">🌐 English</button>
+    <p id="licence">© 2022 Udemy, Inc.</p>
+</div>
+
+           </div><!-- outer div -->
+           
+
+       </div>
+       
+    
+
+    
+    
+    <script src="https://kit.fontawesome.com/5fdeda2fdb.js" crossorigin="anonymous"></script>
+</body>
+</html>
